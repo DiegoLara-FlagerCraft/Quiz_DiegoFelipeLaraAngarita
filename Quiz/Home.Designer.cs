@@ -208,6 +208,16 @@ namespace Quiz
             "MEDELLIN ",
             "CALI"});
             this.CbCiudad.FormattingEnabled = true;
+            this.CbCiudad.Items.AddRange(new object[] {
+            "BUCARAMANGA",
+            "FLORIDABLANCA",
+            "PIEDECUESTA",
+            "GIRON",
+            "SAN GIL",
+            "CUCUTA",
+            "BARRANCABERMEJA",
+            "MEDELLIN",
+            "CALI"});
             this.CbCiudad.Location = new System.Drawing.Point(557, 97);
             this.CbCiudad.Name = "CbCiudad";
             this.CbCiudad.Size = new System.Drawing.Size(215, 21);
@@ -234,6 +244,7 @@ namespace Quiz
             this.BtnGuardar.TabIndex = 17;
             this.BtnGuardar.Text = "GUARDAR";
             this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // BtnReporte
             // 

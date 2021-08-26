@@ -10,15 +10,11 @@ using System.Windows.Forms;
 
 namespace Quiz
 {
-    public partial class Home : Form
+    public partial class Reporte : Form
     {
-        public Home()
+        public Reporte()
         {
             InitializeComponent();
-        }
-        private void BtnGuardar_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
