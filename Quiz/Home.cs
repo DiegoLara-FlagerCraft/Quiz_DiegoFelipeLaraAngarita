@@ -42,5 +42,13 @@ namespace Quiz
             TxtBGuardado.Text = Clipboard.GetText();
 
         }
+
+        private void BtnReporte_Click(object sender, EventArgs e)
+        {
+            String Report = RtxtResultados.Text;
+            Form Formulario = new Reporte(Report);
+            MessageBox.Show("EN ESTE FORMULARIO ENCONTRARA EL REPORTE DE TODOS LOS USUARIOS REGISTRADOS");
+            Formulario.Show();
+        }
     }
 }

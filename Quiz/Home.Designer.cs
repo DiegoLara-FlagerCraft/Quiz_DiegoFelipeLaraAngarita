@@ -259,6 +259,7 @@ namespace Quiz
             this.BtnReporte.TabIndex = 18;
             this.BtnReporte.Text = "REPORTE";
             this.BtnReporte.UseVisualStyleBackColor = false;
+            this.BtnReporte.Click += new System.EventHandler(this.BtnReporte_Click);
             // 
             // RtxtResultados
             // 
@@ -331,7 +332,7 @@ namespace Quiz
         private System.Windows.Forms.Label LblCiudad;
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Button BtnReporte;
-        private System.Windows.Forms.RichTextBox RtxtResultados;
         private System.Windows.Forms.TextBox TxtBGuardado;
+        public System.Windows.Forms.RichTextBox RtxtResultados;
     }
 }

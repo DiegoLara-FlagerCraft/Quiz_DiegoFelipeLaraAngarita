@@ -16,5 +16,12 @@ namespace Quiz
         {
             InitializeComponent();
         }
+
+        public Reporte(String text)
+        {
+            InitializeComponent();
+            RtxtReporte.Text = text;
+
+        }
     }
 }
