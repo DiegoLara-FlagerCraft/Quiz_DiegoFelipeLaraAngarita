@@ -15,9 +15,31 @@ namespace Quiz
         public Home()
         {
             InitializeComponent();
+            TxtBGuardado.Clear();
         }
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
+            RtxtResultados.Clear();
+            string Genero = "";
+            if (CkbMasculino.Checked == true)
+                Genero = "Masculino";
+            if (CkbFemenino.Checked == true)
+                Genero = "Femenino";
+
+            int Indice = CkLServicios.SelectedIndex;
+            if (Indice == -1)
+            {
+                MessageBox.Show("LLENE TODA LA INFORMACIÓN Y SELECCIONE UN SERVICIO");
+            }
+            if (Indice != -1)
+            {
+        
+                RtxtResultados.Text = "REGISTRO \n" + "FECHA DE REGISTRO: " + DtpFecha.Text + "\n" + "CIUDAD DE REGISTRO: " + CbCiudad.Text + "\n"
+                + "NOMBRE: " + TxtNombre.Text + "\n" + "DOCUMENTO: " + TxtDocumento.Text + "\n" + "GENERO: " + Genero + "\n" + "SEVICIO: " + CkLServicios.Items[Indice].ToString() + "\n"
+                + "------------------------------------------------------------------------------- \n" + TxtBGuardado.Text;
+                Clipboard.SetText(RtxtResultados.Text);
+            }
+            TxtBGuardado.Text = Clipboard.GetText();
 
         }
     }

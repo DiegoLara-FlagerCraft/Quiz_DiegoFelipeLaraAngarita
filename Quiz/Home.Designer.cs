@@ -35,7 +35,7 @@ namespace Quiz
             this.LblNombre = new System.Windows.Forms.Label();
             this.LblDocumento = new System.Windows.Forms.Label();
             this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.TxtUsuario = new System.Windows.Forms.TextBox();
+            this.TxtDocumento = new System.Windows.Forms.TextBox();
             this.LblFecha = new System.Windows.Forms.Label();
             this.DtpFecha = new System.Windows.Forms.DateTimePicker();
             this.CkbMasculino = new System.Windows.Forms.CheckBox();
@@ -48,6 +48,7 @@ namespace Quiz
             this.BtnGuardar = new System.Windows.Forms.Button();
             this.BtnReporte = new System.Windows.Forms.Button();
             this.RtxtResultados = new System.Windows.Forms.RichTextBox();
+            this.TxtBGuardado = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ImgBanco)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,7 +81,7 @@ namespace Quiz
             this.LblNombre.AutoSize = true;
             this.LblNombre.BackColor = System.Drawing.Color.Transparent;
             this.LblNombre.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNombre.Location = new System.Drawing.Point(239, 155);
+            this.LblNombre.Location = new System.Drawing.Point(363, 154);
             this.LblNombre.Name = "LblNombre";
             this.LblNombre.Size = new System.Drawing.Size(101, 24);
             this.LblNombre.TabIndex = 4;
@@ -91,7 +92,7 @@ namespace Quiz
             this.LblDocumento.AutoSize = true;
             this.LblDocumento.BackColor = System.Drawing.Color.Transparent;
             this.LblDocumento.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDocumento.Location = new System.Drawing.Point(217, 195);
+            this.LblDocumento.Location = new System.Drawing.Point(341, 194);
             this.LblDocumento.Name = "LblDocumento";
             this.LblDocumento.Size = new System.Drawing.Size(144, 24);
             this.LblDocumento.TabIndex = 5;
@@ -100,25 +101,25 @@ namespace Quiz
             // TxtNombre
             // 
             this.TxtNombre.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNombre.Location = new System.Drawing.Point(367, 155);
+            this.TxtNombre.Location = new System.Drawing.Point(491, 154);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(301, 22);
             this.TxtNombre.TabIndex = 6;
             // 
-            // TxtUsuario
+            // TxtDocumento
             // 
-            this.TxtUsuario.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUsuario.Location = new System.Drawing.Point(367, 195);
-            this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(301, 22);
-            this.TxtUsuario.TabIndex = 7;
+            this.TxtDocumento.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDocumento.Location = new System.Drawing.Point(491, 194);
+            this.TxtDocumento.Name = "TxtDocumento";
+            this.TxtDocumento.Size = new System.Drawing.Size(301, 22);
+            this.TxtDocumento.TabIndex = 7;
             // 
             // LblFecha
             // 
             this.LblFecha.AutoSize = true;
             this.LblFecha.BackColor = System.Drawing.Color.Transparent;
             this.LblFecha.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFecha.Location = new System.Drawing.Point(240, 65);
+            this.LblFecha.Location = new System.Drawing.Point(364, 64);
             this.LblFecha.Name = "LblFecha";
             this.LblFecha.Size = new System.Drawing.Size(229, 24);
             this.LblFecha.TabIndex = 8;
@@ -128,7 +129,7 @@ namespace Quiz
             // 
             this.DtpFecha.CalendarFont = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DtpFecha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtpFecha.Location = new System.Drawing.Point(203, 92);
+            this.DtpFecha.Location = new System.Drawing.Point(327, 91);
             this.DtpFecha.Name = "DtpFecha";
             this.DtpFecha.Size = new System.Drawing.Size(301, 26);
             this.DtpFecha.TabIndex = 9;
@@ -138,7 +139,7 @@ namespace Quiz
             this.CkbMasculino.AutoSize = true;
             this.CkbMasculino.BackColor = System.Drawing.Color.Transparent;
             this.CkbMasculino.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CkbMasculino.Location = new System.Drawing.Point(366, 233);
+            this.CkbMasculino.Location = new System.Drawing.Point(490, 232);
             this.CkbMasculino.Name = "CkbMasculino";
             this.CkbMasculino.Size = new System.Drawing.Size(103, 20);
             this.CkbMasculino.TabIndex = 10;
@@ -150,7 +151,7 @@ namespace Quiz
             this.CkbFemenino.AutoSize = true;
             this.CkbFemenino.BackColor = System.Drawing.Color.Transparent;
             this.CkbFemenino.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CkbFemenino.Location = new System.Drawing.Point(480, 233);
+            this.CkbFemenino.Location = new System.Drawing.Point(604, 232);
             this.CkbFemenino.Name = "CkbFemenino";
             this.CkbFemenino.Size = new System.Drawing.Size(95, 20);
             this.CkbFemenino.TabIndex = 11;
@@ -162,7 +163,7 @@ namespace Quiz
             this.LblGenero.AutoSize = true;
             this.LblGenero.BackColor = System.Drawing.Color.Transparent;
             this.LblGenero.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblGenero.Location = new System.Drawing.Point(239, 233);
+            this.LblGenero.Location = new System.Drawing.Point(363, 232);
             this.LblGenero.Name = "LblGenero";
             this.LblGenero.Size = new System.Drawing.Size(99, 24);
             this.LblGenero.TabIndex = 12;
@@ -173,7 +174,7 @@ namespace Quiz
             this.LblServicios.AutoSize = true;
             this.LblServicios.BackColor = System.Drawing.Color.Transparent;
             this.LblServicios.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblServicios.Location = new System.Drawing.Point(454, 303);
+            this.LblServicios.Location = new System.Drawing.Point(578, 302);
             this.LblServicios.Name = "LblServicios";
             this.LblServicios.Size = new System.Drawing.Size(121, 24);
             this.LblServicios.TabIndex = 13;
@@ -182,15 +183,17 @@ namespace Quiz
             // CkLServicios
             // 
             this.CkLServicios.BackColor = System.Drawing.Color.AliceBlue;
+            this.CkLServicios.CheckOnClick = true;
             this.CkLServicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CkLServicios.FormattingEnabled = true;
+            this.CkLServicios.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.CkLServicios.Items.AddRange(new object[] {
             "CREAR CUENTA DE AHORROS",
             "CREAR CUENTA DE CREDITO",
             "SOLICITAR PRESTAMO",
             "SOLICITAR ASESORIA",
             "APOYO A EMPRENDIMIENTOS"});
-            this.CkLServicios.Location = new System.Drawing.Point(400, 330);
+            this.CkLServicios.Location = new System.Drawing.Point(524, 329);
             this.CkLServicios.Name = "CkLServicios";
             this.CkLServicios.Size = new System.Drawing.Size(227, 89);
             this.CkLServicios.TabIndex = 14;
@@ -218,7 +221,7 @@ namespace Quiz
             "BARRANCABERMEJA",
             "MEDELLIN",
             "CALI"});
-            this.CbCiudad.Location = new System.Drawing.Point(557, 97);
+            this.CbCiudad.Location = new System.Drawing.Point(681, 96);
             this.CbCiudad.Name = "CbCiudad";
             this.CbCiudad.Size = new System.Drawing.Size(215, 21);
             this.CbCiudad.TabIndex = 15;
@@ -228,7 +231,7 @@ namespace Quiz
             this.LblCiudad.AutoSize = true;
             this.LblCiudad.BackColor = System.Drawing.Color.Transparent;
             this.LblCiudad.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCiudad.Location = new System.Drawing.Point(549, 65);
+            this.LblCiudad.Location = new System.Drawing.Point(673, 64);
             this.LblCiudad.Name = "LblCiudad";
             this.LblCiudad.Size = new System.Drawing.Size(238, 24);
             this.LblCiudad.TabIndex = 16;
@@ -238,7 +241,7 @@ namespace Quiz
             // 
             this.BtnGuardar.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BtnGuardar.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnGuardar.Location = new System.Drawing.Point(347, 466);
+            this.BtnGuardar.Location = new System.Drawing.Point(471, 465);
             this.BtnGuardar.Name = "BtnGuardar";
             this.BtnGuardar.Size = new System.Drawing.Size(157, 38);
             this.BtnGuardar.TabIndex = 17;
@@ -250,7 +253,7 @@ namespace Quiz
             // 
             this.BtnReporte.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BtnReporte.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnReporte.Location = new System.Drawing.Point(557, 466);
+            this.BtnReporte.Location = new System.Drawing.Point(681, 465);
             this.BtnReporte.Name = "BtnReporte";
             this.BtnReporte.Size = new System.Drawing.Size(157, 38);
             this.BtnReporte.TabIndex = 18;
@@ -260,11 +263,20 @@ namespace Quiz
             // RtxtResultados
             // 
             this.RtxtResultados.BackColor = System.Drawing.Color.AliceBlue;
+            this.RtxtResultados.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RtxtResultados.Location = new System.Drawing.Point(-1, 146);
             this.RtxtResultados.Name = "RtxtResultados";
-            this.RtxtResultados.Size = new System.Drawing.Size(196, 484);
+            this.RtxtResultados.Size = new System.Drawing.Size(322, 484);
             this.RtxtResultados.TabIndex = 19;
             this.RtxtResultados.Text = "";
+            // 
+            // TxtBGuardado
+            // 
+            this.TxtBGuardado.Location = new System.Drawing.Point(345, 307);
+            this.TxtBGuardado.Name = "TxtBGuardado";
+            this.TxtBGuardado.Size = new System.Drawing.Size(100, 20);
+            this.TxtBGuardado.TabIndex = 20;
+            this.TxtBGuardado.Visible = false;
             // 
             // Home
             // 
@@ -273,6 +285,7 @@ namespace Quiz
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(968, 642);
+            this.Controls.Add(this.TxtBGuardado);
             this.Controls.Add(this.RtxtResultados);
             this.Controls.Add(this.BtnReporte);
             this.Controls.Add(this.BtnGuardar);
@@ -285,7 +298,7 @@ namespace Quiz
             this.Controls.Add(this.CkbMasculino);
             this.Controls.Add(this.DtpFecha);
             this.Controls.Add(this.LblFecha);
-            this.Controls.Add(this.TxtUsuario);
+            this.Controls.Add(this.TxtDocumento);
             this.Controls.Add(this.TxtNombre);
             this.Controls.Add(this.LblDocumento);
             this.Controls.Add(this.LblNombre);
@@ -306,7 +319,7 @@ namespace Quiz
         private System.Windows.Forms.Label LblNombre;
         private System.Windows.Forms.Label LblDocumento;
         private System.Windows.Forms.TextBox TxtNombre;
-        private System.Windows.Forms.TextBox TxtUsuario;
+        private System.Windows.Forms.TextBox TxtDocumento;
         private System.Windows.Forms.Label LblFecha;
         private System.Windows.Forms.DateTimePicker DtpFecha;
         private System.Windows.Forms.CheckBox CkbMasculino;
@@ -319,5 +332,6 @@ namespace Quiz
         private System.Windows.Forms.Button BtnGuardar;
         private System.Windows.Forms.Button BtnReporte;
         private System.Windows.Forms.RichTextBox RtxtResultados;
+        private System.Windows.Forms.TextBox TxtBGuardado;
     }
 }
