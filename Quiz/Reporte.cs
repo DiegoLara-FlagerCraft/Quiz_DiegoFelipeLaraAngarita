@@ -21,7 +21,6 @@ namespace Quiz
         {
             InitializeComponent();
             RtxtReporte.Text = text;
-
         }
     }
 }

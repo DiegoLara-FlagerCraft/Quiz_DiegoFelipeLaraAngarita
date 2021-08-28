@@ -273,7 +273,7 @@ namespace Quiz
             // 
             // TxtBGuardado
             // 
-            this.TxtBGuardado.Location = new System.Drawing.Point(345, 307);
+            this.TxtBGuardado.Location = new System.Drawing.Point(127, 120);
             this.TxtBGuardado.Name = "TxtBGuardado";
             this.TxtBGuardado.Size = new System.Drawing.Size(100, 20);
             this.TxtBGuardado.TabIndex = 20;
